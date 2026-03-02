@@ -1,0 +1,27 @@
+vision:
+  name: ProjectMind
+  description: Local, project-aware AI engineering system
+  target_users: Software engineers and teams
+  key_principles:
+  - Explainability
+  - Determinism
+  - Human-in-the-loop
+  - No autonomous harm
+constraints:
+  no_autonomous_changes: true
+  must_explain_reasoning: true
+  respect_architecture: true
+  custom_constraints:
+  - AI cannot edit files directly
+  - All suggestions must include reasoning
+  - Respect existing architecture decisions
+  - Refuse unsafe requests
+tech_stack:
+- Python 3.9+
+- Click CLI
+- PyYAML
+- Pydantic
+architecture_notes: 'Four-layer system: Repository Intelligence, Context & Memory,
+  CLI, Architecture Discipline'
+team_size: 1
+deployment_target: Local machine

@@ -20,7 +20,7 @@ ProjectMind is built differently from typical AI tools:
 
 ## 🏗 Architecture: Four Layers
 
-```
+```md
 ┌──────────────────────────────────┐
 │ Layer C: CLI Interface            │
 │ (Explicit, Auditable Commands)   │
@@ -43,34 +43,41 @@ ProjectMind is built differently from typical AI tools:
 ```
 
 ### Layer A: Repository Intelligence ✅ READY
+
 - **RepoScanner**: Walks entire directory, detects languages
 - **PythonParser**: Extracts functions, classes, imports (no execution)
 - **FileMetadata**: Deterministic file-level data
 - **Status**: Complete, tested
 
 ### Layer B: Context & Memory ✅ READY
+
 - **ProjectContext**: Vision, goals, team info
 - **ProjectConstraints**: Rules AI must follow
 - **ContextLoader**: Load/save from YAML
 - **Status**: Complete, tested
 
 ### Layer C: CLI Interface ✅ READY
+
 **Phase 1 Commands**:
+
 - `pmind scan` - Full repository scan
 - `pmind analyze <file.py>` - Detailed Python file analysis
 - `pmind context` - Manage project alignment
 - `pmind init` - Initialize ProjectMind
 
 **Phase 2 Commands** (NEW):
+
 - `pmind summarize <file.py>` - Analyze and summarize Python file
 - `pmind generate-docs` - Generate API documentation
 
 **Phase 3 Commands** (NEW):
+
 - `pmind search <query>` - Search code using semantic similarity
 - `pmind index-files` - Index Python files for semantic search
 - `pmind search-stats` - Display search index statistics
 
 **Phase 5 Commands** (NEW):
+
 - `pmind validate <action>` - Check policy compliance
 - `pmind scan-threats <file>` - Detect security threats
 - `pmind audit-log-action` - Log actions for compliance
@@ -79,6 +86,7 @@ ProjectMind is built differently from typical AI tools:
 **Status**: Complete, tested (86 tests passing)
 
 ### Layer D: Architecture Discipline & Advanced Features ✅ READY
+
 - **Knowledge System** (Phase A): 11 comprehensive documentation files (4,100+ lines)
 - **Context-Aware Agents** (Phase B): 4 intelligent agents with business context
 - **Agent Personas** (Phase D): 5 personality models (Architect, Guardian, Craftsman, Mentor, Generalist)
@@ -175,7 +183,8 @@ pmind context --init
 | Unit tests | ✅ | 158 tests, 100% pass rate |
 
 ### Test Coverage
-```
+
+```md
 Phase A-B Integration Tests:      56 tests
 Phase C Validation Tests:          25 tests
 Phase D Enhancement Tests:         27 tests
@@ -198,6 +207,7 @@ ProjectMind understands your code's **business logic** and provides **intelligen
 ✅ **Multi-perspective analysis** - View code from 5 different expert angles:
 
 **5 Agent Personas:**
+
 1. **Architect** 🏗️ - Focuses on design and structure
 2. **Guardian** 👮 - Prioritizes security and compliance
 3. **Craftsman** 🔨 - Emphasizes code quality and patterns
@@ -245,31 +255,37 @@ suggestions = engine.generate_suggestions(
 ## 🔧 Use Cases
 
 ### 1. **Code Improvement Suggestions**
+
 - Understand legacy code in your project
 - Get improvement suggestions based on business needs
 - Refactor with confidence using AI insights
 
 ### 2. **Security & Compliance**
+
 - Detect security vulnerabilities in your code
 - Validate against compliance policies (GDPR, SOC2, etc.)
 - Generate audit logs automatically
 
 ### 3. **Code Review Automation**
+
 - Get pre-review analysis before human review
 - Multi-perspective feedback (Architect, Guardian, Craftsman)
 - Suggest best practices tailored to your codebase
 
 ### 4. **Business Logic Optimization**
+
 - Improve checkout, payment, authorization logic
 - Detect business logic vulnerabilities
 - Optimize performance-critical code paths
 
 ### 5. **Documentation from Code**
+
 - Auto-generate API documentation
 - Create docstrings from code analysis
 - Build knowledge base from codebase
 
 ### 6. **Developer Training**
+
 - Mentor perspective provides learning-focused suggestions
 - Understand why code patterns matter
 - Learn best practices in context
@@ -321,11 +337,13 @@ pytest -v
 ## 📚 Documentation
 
 ### Phase Completion Reports
+
 - [PHASE_D_COMPLETION_REPORT.md](PHASE_D_COMPLETION_REPORT.md) - Phase D: Agent Personas, Suggestion Engine, Workflow Context
 - [PHASE_3_COMPLETION_REPORT.md](PHASE_3_COMPLETION_REPORT.md) - Phase C: Testing & Validation
 - [PHASE_C_COMPLETION_REPORT.md](PHASE_C_COMPLETION_REPORT.md) - Earlier phase documentation
 
 ### Technical Documentation
+
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) - System design and architecture
 - [docs/ARCHITECTURE_AND_DECISIONS.md](docs/ARCHITECTURE_AND_DECISIONS.md) - Design decisions
 - [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md) - Setup and quick start guide
@@ -351,6 +369,7 @@ pytest -v
 ## 🤝 Contributing
 
 ProjectMind is designed for:
+
 - Solo developers & small teams
 - Enterprises building AI governance
 - Researchers in explainable AI

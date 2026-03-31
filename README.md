@@ -1,8 +1,6 @@
 # ProjectMind
 
-<p align="center">
-  <img src="./projectmind-logo.png" alt="ProjectMind Logo" width="200"/>
-</p>
+![ProjectMind Logo](./ProjectMind%20logo%20with%20brain%20and%20circuits.png)
 
 **Local, project-aware AI engineering system with intelligent code analysis and business logic suggestions.**
 

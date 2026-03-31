@@ -1,7 +1,8 @@
 # ProjectMind
 
-<!-- LOGO PLACEHOLDER: Replace [LOGO_URL] with your project logo URL -->
-<!-- ![ProjectMind Logo][LOGO_URL] -->
+<p align="center">
+  <img src="./projectmind-logo.png" alt="ProjectMind Logo" width="200"/>
+</p>
 
 **Local, project-aware AI engineering system with intelligent code analysis and business logic suggestions.**
 
